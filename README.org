@@ -1,0 +1,19 @@
+#+TITLE: Muse themes
+#+CREATOR: Emmanuel Bustos T./Ian Pan
+
+* What is this
+  This is an UI/multi-theme package for Emacs using doom-themes core. It's currently work in progress, but soon it will be available on MELPA.
+* TO DO [0/4]
+  - [ ] Fix linting/documentation problems.
+  - [ ] Implement two themes 
+  - [ ] Add this package to MELPA (depends on the previous points)
+  - [ ] Create an own Treemacs theme
+* Theme wish list 
+  - [ ] Fairy Floss theme
+  - [ ] Wilsmesdorf theme 
+  - [ ] Tron Legacy theme
+  - [ ] Gruvbox theme  
+  - [ ] Palenight theme
+  - [ ] Outrun Night theme (port from VS Code) 
+  - [ ] Outrun Electric theme (port from VS Code)  
+  - [ ] Dark+ theme (port from VS Code)  
