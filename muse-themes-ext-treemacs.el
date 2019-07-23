@@ -1,5 +1,9 @@
 ;;; muse-themes-ext-treemacs.el --- description -*- lexical-binding: t; no-byte-compile: t -*-
+;;; Commentary:
+;; Muse themes Treemacs theme settings and configurations.
 
+
+;;; Code:
 (defgroup muse-themes-treemacs nil
   "Options for muse's treemacs theme"
   :group 'muse-themes)
@@ -9,8 +13,7 @@
 ;;; Variables
 
 (defcustom muse-themes-treemacs-enable-variable-pitch t
-  "If non-nil, the labels for files, folders and projects are displayed with the
-variable-pitch face."
+  "If non-nil, display the labels for files, folders and projects with the variable-pitch face."
   :type 'boolean
   :group 'muse-themes-treemacs)
 
@@ -37,9 +40,11 @@ variable-pitch face."
   (setq line-spacing muse-themes-treemacs-line-spacing))
 
 (defun muse-themes-hide-modeline ()
+"Function for hiding the modeline."
   (setq mode-line-format nil))
 
 (defun muse-themes-enable-treemacs-variable-pitch-labels (&rest _)
+  "Function for enabling variable pitch faces for the labels."
   (when muse-themes-treemacs-enable-variable-pitch
     (dolist (face '(treemacs-root-face
                     treemacs-git-unmodified-face
@@ -59,7 +64,7 @@ variable-pitch face."
          `(variable-pitch ,@(delq 'unspecified (if (listp faces) faces (list faces)))))))))
 
 (defun muse-themes-fix-treemacs-icons-dired-mode ()
-  "Set `tab-width' to 1 in dired-mode if `treemacs-icons-dired-mode' is active."
+  "Set `tab-width' to 1 in `dired-mode' if `treemacs-icons-dired-mode' is active."
   (if treemacs-icons-dired-mode
       (add-hook 'dired-mode-hook #'muse-themes-setup-tab-width nil t)
     (remove-hook 'dired-mode-hook #'muse-themes-setup-tab-width t)))
@@ -70,7 +75,7 @@ variable-pitch face."
 
 (with-eval-after-load 'treemacs
   (unless (require 'all-the-icons nil t)
-    (error "all-the-icons isn't installed"))
+    (error "The package all-the-icons isn't installed"))
 
   (add-hook 'treemacs-mode-hook #'muse-themes-setup-tab-width)
   (add-hook 'treemacs-mode-hook #'muse-themes-setup-line-spacing)
