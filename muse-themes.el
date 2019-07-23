@@ -1,4 +1,4 @@
-;;; doom-themes.el --- an opinionated pack of modern color-themes -*- lexical-binding: t; -*-
+;;; muse-themes.el --- an opinionated pack of modern color-themes -*- lexical-binding: t; -*-
 ;;
 ;; Copyright (C) 2019 Emmanuel Bustos, Ian Pan
 ;;
@@ -78,6 +78,7 @@
 (defvar muse-themes--faces nil)
 
 (defun muse-themes--colors-p (item)
+  "Doc pending.  ITEM is the argument.  It can be either a list or an individual element."
   (declare (pure t) (side-effect-free t))
   (when item
     (cond ((listp item)
@@ -102,6 +103,7 @@
                 (assq item muse-themes--colors))))))
 
 (defun muse-themes--apply-faces (new-faces &optional default-faces)
+  "Function for applying NEW-FACES to the theme.  Also DEFAULT-FACES are provided."
   (declare (pure t) (side-effect-free t))
   (let ((default-faces (or default-faces muse-themes-base-faces))
         (faces (make-hash-table :test #'eq :size (+ (length default-faces) (length new-faces))))
@@ -148,6 +150,7 @@
       (nreverse results))))
 
 (defun muse-themes--colorize (item type)
+  "Doc Pending.  ITEM and TYPE are the arguments."
   (declare (pure t) (side-effect-free t))
   (when item
     (let ((muse--quoted-p muse--quoted-p))
@@ -178,6 +181,7 @@
             (item)))))
 
 (defun muse-themes--build-face (face)
+  "Function for building FACE."
   (declare (pure t) (side-effect-free t))
   `(list
     ',(car face)
@@ -227,8 +231,8 @@ for FRAME (defaults to the current frame)."
 
 ;;;###autoload
 (defun muse-blend (color1 color2 alpha)
-  "Blend two colors (hexidecimal strings) together by a coefficient ALPHA (a
-float between 0 and 1)"
+  "Blend COLOR1 and COLOR2 hexidecimal strings together by a coefficient ALPHA.
+ALPHA is a float between 0 and 1."
   (when (and color1 color2)
     (cond ((and color1 color2 (symbolp color1) (symbolp color2))
            (muse-blend (muse-color color1) (muse-color color2) alpha))
@@ -248,8 +252,8 @@ float between 0 and 1)"
 
 ;;;###autoload
 (defun muse-darken (color alpha)
-  "Darken a COLOR (a hexidecimal string) by a coefficient ALPHA (a float between
-0 and 1)."
+  "Darken a COLOR (a hexidecimal string) by a coefficient ALPHA.
+ALPHA is a float between 0 and 1."
   (cond ((and color (symbolp color))
          (muse-darken (muse-color color) alpha))
 
@@ -286,7 +290,7 @@ It passes TYPE as the prop argument to the `plist-get` function."
 
 ;;;###autoload
 (defun muse-ref (face prop &optional class)
-  "TODO"
+  "Doc pending.  FACE PROP and CLASS are the arguments."
   (let ((spec (or (cdr (assq face muse-themes--faces))
                   (error "Couldn't find the '%s' face" face))))
     (when (memq (car spec) '(quote backquote \`))
@@ -307,15 +311,13 @@ It passes TYPE as the prop argument to the `plist-get` function."
 
 (defun muse-themes-prepare-facelist (custom-faces)
   "Return an alist of face definitions for `custom-theme-set-faces'.
-
-Faces in EXTRA-FACES override the default faces."
+Uses CUSTOM-FACES.  Faces in EXTRA-FACES override the default faces."
   (declare (pure t) (side-effect-free t))
   (setq muse-themes--faces (muse-themes--apply-faces custom-faces))
   (mapcar #'muse-themes--build-face muse-themes--faces))
 
 (defun muse-themes-prepare-varlist (vars)
-  "Return an alist of variable definitions for `custom-theme-set-variables'.
-
+  "Return alist of variable definitions VARS for `custom-theme-set-variables'.
 Variables in EXTRA-VARS override the default ones."
   (declare (pure t) (side-effect-free t))
   (cl-loop for (var val) in (append muse-themes-base-vars vars)
@@ -324,9 +326,8 @@ Variables in EXTRA-VARS override the default ones."
 ;;;###autoload
 (defun muse-themes-set-faces (theme &rest faces)
   "Customize THEME (a symbol) with FACES.
-
-If THEME is nil, it applies to all themes you load. FACES is a list of Muse
-theme face specs. These is a simplified spec. For example:
+If THEME is nil, it applies to all themes you load.  FACES is a list of Muse
+theme face specs.  These is a simplified spec.  For example:
 
   (muse-themes-set-faces 'user
     '(default :background red :foreground blue)
@@ -345,7 +346,9 @@ theme face specs. These is a simplified spec. For example:
              (list ,@(mapcar #'muse-themes--build-face faces))))))
 
 (defmacro def-muse-theme (name docstring defs &optional extra-faces extra-vars)
-  "Define a MUSE theme, named NAME (a symbol)."
+  "Define a muse theme, named NAME (a symbol).
+It receives several arguments such as the DOCSTRING, the DEFS and optional
+EXTRA-FACES and EXTRA-VARS"
   (declare (doc-string 2))
   (let ((muse-themes--colors defs))
     `(let* ((bold   muse-themes-enable-bold)
