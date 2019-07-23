@@ -151,15 +151,15 @@ determine the exact padding."
    (css-selector             :foreground blue)
 
    ;; markdown-mode
-   (markdown-markup-face :foreground base5)
-   (markdown-header-face :inherit 'bold :foreground red)
-   (markdown-url-face    :foreground teal :weight 'normal)
-   (markdown-reference-face :foreground base6)
+   (markdown-markup-face             :foreground base5)
+   (markdown-header-face             :inherit 'bold :foreground red)
+   (markdown-url-face                :foreground teal :weight 'normal)
+   (markdown-reference-face          :foreground base6)
    ((markdown-bold-face &override)   :foreground fg)
    ((markdown-italic-face &override) :foreground fg-alt)
 
    ;; outline (affects org-mode)
-   ((outline-1 &override) :foreground blue :background base0)
+   ((outline-1 &override) :foreground blue :background nil)
    ((outline-2 &override) :foreground green)
    ((outline-3 &override) :foreground teal)
    ((outline-4 &override) :foreground (muse-darken blue 0.2))
@@ -169,10 +169,10 @@ determine the exact padding."
    ((outline-8 &override) :foreground (muse-darken green 0.4))
 
    ;; org-mode
-   (org-hide :foreground hidden)
-   (org-block :background base2)
-   (org-block-background :background base2)
-   (org-block-begin-line :background base3 :foreground comments)
+   (org-hide              :foreground hidden)
+   (org-block             :background base0)
+   (org-block-begin-line  :foreground comments :background base0)
+   (org-block-end-line    :inherit 'org-block-begin-line)
    (solaire-org-hide-face :foreground hidden))
   ;; --- extra variables ---------------------
   ;; ()
