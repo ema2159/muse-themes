@@ -62,7 +62,7 @@ Can be an integer to determine the exact padding."
    (selection      accent)
    (builtin        orange)
    (comments       (if muse-gruvbox-brighter-comments magenta base6))
-   (doc-comments   (if muse-gruvbox-brighter-comments (muse-lighten magenta 0.2) base5))
+   (doc-comments   (if muse-gruvbox-brighter-comments (muse-lighten magenta 0.2) base6))
    (constants      yellow)
    (functions      green)
    (keywords       red)
