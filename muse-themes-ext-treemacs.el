@@ -140,148 +140,154 @@
       (treemacs-create-icon
        :icon (format "  %s\t" (all-the-icons-icon-for-file "fo.css"))
        :extensions ("css"))
-      (treemacs-create-icon 
-       :icon (format "  %s\t" (all-the-icons-icon-for-file "foo.git"))                       
+      (treemacs-create-icon
+       :icon (format "  %s\t" (all-the-icons-icon-for-file "foo.git"))
        :extensions ("gitignore" "git" "gitconfig" "gitmodules"))
-      (treemacs-create-icon 
-       :icon (format "  %s\t" (all-the-icons-icon-for-file "foo.html"))                      
+      (treemacs-create-icon
+       :icon (format "  %s\t" (all-the-icons-icon-for-file "foo.html"))
        :extensions ("html" "htm"))
-      (treemacs-create-icon 
-       :icon (format "  %s\t" (all-the-icons-icon-for-file "foo.java"))                      
+      (treemacs-create-icon
+       :icon (format "  %s\t" (all-the-icons-icon-for-file "foo.java"))
        :extensions ("java"))
-      (treemacs-create-icon 
-       :icon (format "  %s\t" (all-the-icons-icon-for-file "foo.py"))                        
+      (treemacs-create-icon
+       :icon (format "  %s\t" (all-the-icons-icon-for-file "foo.py"))
        :extensions ("py"))
-      (treemacs-create-icon 
-       :icon (format "  %s\t" (all-the-icons-icon-for-file "foo.rs"))                        
+      (treemacs-create-icon
+       :icon (format "  %s\t" (all-the-icons-icon-for-file "foo.rs"))
        :extensions ("rs"))
-      (treemacs-create-icon 
-       :icon (format "  %s\t" (all-the-icons-icon-for-file "foo.hs"))                        
+      (treemacs-create-icon
+       :icon (format "  %s\t" (all-the-icons-icon-for-file "foo.hs"))
        :extensions ("hs"))
-      (treemacs-create-icon 
-       :icon (format "  %s\t" (all-the-icons-icon-for-file "foo.c"))                         
+      (treemacs-create-icon
+       :icon (format "  %s\t" (all-the-icons-icon-for-file "foo.c"))
        :extensions ("c" "h"))
-      (treemacs-create-icon 
-       :icon (format "  %s\t" (all-the-icons-icon-for-file "foo.cpp"))                       
+      (treemacs-create-icon
+       :icon (format "  %s\t" (all-the-icons-icon-for-file "foo.cpp"))
        :extensions ("cpp" "cxx" "hpp" "tpp" "cc" "hh"))
-      (treemacs-create-icon 
-       :icon (format "  %s\t" (all-the-icons-icon-for-file "foo.rb"))                        
+      (treemacs-create-icon
+       :icon (format "  %s\t" (all-the-icons-icon-for-file "foo.rb"))
        :extensions ("rb"))
-      (treemacs-create-icon 
-       :icon (format "  %s\t" (all-the-icons-icon-for-file "foo.scala"))                     
+      (treemacs-create-icon
+       :icon (format "  %s\t" (all-the-icons-icon-for-file "foo.scala"))
        :extensions ("scala"))
-      (treemacs-create-icon 
-       :icon (format "  %s\t" (all-the-icons-icon-for-file "foo.ex"))                        
+      (treemacs-create-icon
+       :icon (format "  %s\t" (all-the-icons-icon-for-file "foo.ex"))
        :extensions ("ex" "exs"))
-      (treemacs-create-icon 
-       :icon (format "  %s\t" (all-the-icons-icon-for-file "foo.erl"))                       
+      (treemacs-create-icon
+       :icon (format "  %s\t" (all-the-icons-icon-for-file "foo.erl"))
        :extensions ("erl" "hrl")) ;
-      (treemacs-create-icon 
-       :icon (format "  %s\t" (all-the-icons-icon-for-file "foo.clj"))                       
+      (treemacs-create-icon
+       :icon (format "  %s\t" (all-the-icons-icon-for-file "foo.clj"))
        :extensions ("clj" "cljs" "cljc"))
-      (treemacs-create-icon 
-       :icon (format "  %s\t" (all-the-icons-fileicon "cabal"      :face face-spec))         
+      (treemacs-create-icon
+       :icon (format "  %s\t" (all-the-icons-fileicon "cabal" :face face-spec))
        :extensions ("cabal"))
-      (treemacs-create-icon 
-       :icon (format "  %s\t" (all-the-icons-icon-for-file "foo.lisp"))                      
+      (treemacs-create-icon
+       :icon (format "  %s\t" (all-the-icons-icon-for-file "foo.lisp"))
        :extensions ("lisp"))
-      (treemacs-create-icon 
-       :icon (format "  %s\t" (all-the-icons-icon-for-file "foo.go"))                        
+      (treemacs-create-icon
+       :icon (format "  %s\t" (all-the-icons-icon-for-file "foo.go"))
        :extensions ("go"))
-      (treemacs-create-icon 
-       :icon (format "  %s\t" (all-the-icons-icon-for-file "foo.el"))                        
+      (treemacs-create-icon
+       :icon (format "  %s\t" (all-the-icons-icon-for-file "foo.el"))
        :extensions ("el" "elc"))
-      (treemacs-create-icon 
-       :icon (format "  %s\t" (all-the-icons-icon-for-file "foo.jl"))                        
+      (treemacs-create-icon
+       :icon (format "  %s\t" (all-the-icons-icon-for-file "foo.jl"))
        :extensions ("jl"))
-      (treemacs-create-icon 
-       :icon (format "  %s\t" (all-the-icons-fileicon "kotlin" :face face-spec))         
+      (treemacs-create-icon
+       :icon (format "  %s\t" (all-the-icons-fileicon "kotlin" :face face-spec))
        :extensions ("kt" "kts"))
-      (treemacs-create-icon 
-       :icon (format "  %s\t" (all-the-icons-icon-for-file "foo.hy"))                        
+      (treemacs-create-icon
+       :icon (format "  %s\t" (all-the-icons-icon-for-file "foo.hy"))
        :extensions ("hy"))
-      (treemacs-create-icon 
-       :icon (format "  %s\t" (all-the-icons-icon-for-file "foo.js"))                        
+      (treemacs-create-icon
+       :icon (format "  %s\t" (all-the-icons-icon-for-file "foo.js"))
        :extensions ("js"))
-      (treemacs-create-icon 
-       :icon (format "  %s\t" (all-the-icons-icon-for-file "foo.jsx"))
+      (treemacs-create-icon
+       :icon (format "  %s\t" (all-the-icons-icon-for-file "foo.jsx")
        :extensions ("jsx"))
-      (treemacs-create-icon 
+      (treemacs-create-icon
        :icon (format "  %s\t" (all-the-icons-icon-for-file "foo.ml"))
        :extensions ("ml" "mli"))
-      (treemacs-create-icon 
-       :icon (format "  %s\t" (all-the-icons-icon-for-file "foo.org"))                       
+      (treemacs-create-icon
+       :icon (format "  %s\t" (all-the-icons-icon-for-file "foo.org"))
        :extensions ("org"))
-      (treemacs-create-icon 
-       :icon (format "  %s\t" (all-the-icons-icon-for-file "foo.php"))                       
+      (treemacs-create-icon
+       :icon (format "  %s\t" (all-the-icons-icon-for-file "foo.php"))
        :extensions ("php"))
-      (treemacs-create-icon 
-       :icon (format "  %s\t" (all-the-icons-icon-for-file "foo.sh"))                        
-       :extensions ("sh" "zsh" "fish"))
-      (treemacs-create-icon 
-       :icon (format "  %s\t" (all-the-icons-icon-for-file "foo.ts"))                        
+      (treemacs-create-icon
+       :icon (format "  %s\t" (all-the-icons-icon-for-file "foo.sh"))
+       :extensions ("sh"))
+      (treemacs-create-icon
+       :icon (format "  %s\t" (all-the-icons-icon-for-file "foo.zsh"))
+       :extensions ("zsh"))
+      (treemacs-create-icon
+       :icon (format "  %s\t" (all-the-icons-icon-for-file "foo.fish"))
+       :extensions ("fish"))
+      (treemacs-create-icon
+       :icon (format "  %s\t" (all-the-icons-icon-for-file "foo.ts"))
        :extensions ("ts"))
-      (treemacs-create-icon 
-       :icon (format "  %s\t" (all-the-icons-fileicon "nimrod" :face face-spec))         
+      (treemacs-create-icon
+       :icon (format "  %s\t" (all-the-icons-fileicon "nimrod" :face face-spec))
        :extensions ("nim" "nims"))
-      (treemacs-create-icon 
-       :icon (format "  %s\t" (all-the-icons-icon-for-file "foo.pl"))                        
+      (treemacs-create-icon
+       :icon (format "  %s\t" (all-the-icons-icon-for-file "foo.pl"))
        :extensions ("pl" "pm" "perl"))
-      (treemacs-create-icon 
-       :icon (format "  %s\t" (all-the-icons-fileicon "perl6" :face face-spec))         
+      (treemacs-create-icon
+       :icon (format "  %s\t" (all-the-icons-fileicon "perl6" :face face-spec))
        :extensions ("pm6"))
       (treemacs-create-icon
-       :icon (format "  %s\t" (all-the-icons-icon-for-file "foo.r"))                         
+       :icon (format "  %s\t" (all-the-icons-icon-for-file "foo.r"))
        :extensions ("r"))
-      (treemacs-create-icon 
-       :icon (format "  %s\t" (all-the-icons-icon-for-file "foo.tex"))                       
-       :extensions ("tex"))
-      (treemacs-create-icon 
-       :icon (format "  %s\t" (all-the-icons-icon-for-file "foo.rst"))                       
-       :extensions ("rst"))
-      (treemacs-create-icon 
-       :icon (format "  %s\t" (all-the-icons-icon-for-file "foo.vue"))                       
-       :extensions ("vue"))
-      (treemacs-create-icon 
-       :icon (format "  %s\t" (all-the-icons-icon-for-file "foo.md"))                        
-       :extensions ("md" "markdown"))
-      (treemacs-create-icon 
-       :icon (format "  %s\t" (all-the-icons-icon-for-file "foo.pdf"))                       
-       :extensions ("pdf"))
-      (treemacs-create-icon 
-       :icon (format "  %s\t" (all-the-icons-icon-for-file "foo.csv"))                       
-       :extensions ("csv"))
-      (treemacs-create-icon 
-       :icon (format "  %s\t" (all-the-icons-octicon "database" :face face-spec))         
-       :extensions ("sql"))
-      (treemacs-create-icon 
-       :icon (format "  %s\t" (all-the-icons-material "style" :face face-spec))         
-       :extensions ("styles"))
-      (treemacs-create-icon 
-       :icon (format "  %s\t" (all-the-icons-fileicon "lua" :face face-spec))         
-       :extensions ("lua"))
-      (treemacs-create-icon 
-       :icon (format "  %s\t" (all-the-icons-fileicon "asciidoc" :face face-spec))         
-       :extensions ("adoc" "asciidoc"))
-      (treemacs-create-icon 
-       :icon (format "  %s\t" (all-the-icons-icon-for-file "foo.sbt"))                       
-       :extensions ("sbt"))
-      (treemacs-create-icon 
-       :icon (format "  %s\t" (all-the-icons-fileicon "puppet" :face face-spec))         
-       :extensions ("pp"))
-      (treemacs-create-icon 
-       :icon (format "  %s\t" (all-the-icons-fileicon "jinja" :face face-spec))         
-       :extensions ("j2" "jinja2"))
-      (treemacs-create-icon 
-       :icon (format "  %s\t" (all-the-icons-fileicon "dockerfile" :face face-spec))         
-       :extensions ("dockerfile"))
-      (treemacs-create-icon 
-       :icon (format "  %s\t" (all-the-icons-fileicon "vagrant" :face face-spec))         
-       :extensions ("vagrantfile"))
-      (treemacs-create-icon 
-       :icon (format "  %s\t" (all-the-icons-icon-for-file "foo.rkt"))                       
-       :extensions ("racket" "rkt" "rktl" "rktd" "scrbl" "scribble" "plt"))
       (treemacs-create-icon
+       :icon (format "  %s\t" (all-the-icons-icon-for-file "foo.tex"))
+       :extensions ("tex"))
+      (treemacs-create-icon
+       :icon (format "  %s\t" (all-the-icons-icon-for-file "foo.rst"))
+       :extensions ("rst"))
+      (treemacs-create-icon
+       :icon (format "  %s\t" (all-the-icons-icon-for-file "foo.vue"))
+       :extensions ("vue"))
+      (treemacs-create-icon
+       :icon (format "  %s\t" (all-the-icons-icon-for-file "foo.md"))
+       :extensions ("md" "markdown"))
+      (treemacs-create-icon
+       :icon (format "  %s\t" (all-the-icons-icon-for-file "foo.pdf"))
+       :extensions ("pdf"))
+      (treemacs-create-icon
+       :icon (format "  %s\t" (all-the-icons-icon-for-file "foo.csv"))
+       :extensions ("csv"))
+      (treemacs-create-icon
+       :icon (format "  %s\t" (all-the-icons-octicon "database" :face face-spec))
+       :extensions ("sql"))
+      (treemacs-create-icon
+       :icon (format "  %s\t" (all-the-icons-material "style" :face face-spec))
+       :extensions ("styles"))
+      (treemacs-create-icon
+       :icon (format "  %s\t" (all-the-icons-fileicon "lua" :face face-spec))
+       :extensions ("lua"))
+      (treemacs-create-icon
+       :icon (format "  %s\t" (all-the-icons-fileicon "asciidoc" :face face-spec))
+       :extensions ("adoc" "asciidoc"))
+      (treemacs-create-icon
+       :icon (format "  %s\t" (all-the-icons-icon-for-file "foo.sbt"))
+       :extensions ("sbt"))
+      (treemacs-create-icon
+       :icon (format "  %s\t" (all-the-icons-fileicon "puppet" :face face-spec))
+       :extensions ("pp"))
+      (treemacs-create-icon
+       :icon (format "  %s\t" (all-the-icons-fileicon "jinja" :face face-spec))
+       :extensions ("j2" "jinja2"))
+      (treemacs-create-icon
+       :icon (format "  %s\t" (all-the-icons-fileicon "dockerfile" :face face-spec))
+       :extensions ("dockerfile"))
+      (treemacs-create-icon
+       :icon (format "  %s\t" (all-the-icons-fileicon "vagrant" :face face-spec))
+       :extensions ("vagrantfile"))
+      (treemacs-create-icon
+       :icon (format "  %s\t" (all-the-icons-icon-for-file "foo.rkt"))
+       :extensions ("racket" "rkt" "rktl" "rktd" "scrbl" "scribble" "plt"))
+      (treemacs-create-ico
        :icon (format "  %s\t" (all-the-icons-icon-for-file "foo.reason"))
        :extensions ("re" "rei"))
       (treemacs-create-icon
