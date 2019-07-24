@@ -115,14 +115,21 @@
       (treemacs-create-icon
        :icon (format "%s\t%s\t"
 		     (all-the-icons-octicon "chevron-down" :height 0.75 :v-adjust 0.1 :face face-spec)
-		     (all-the-icons-octicon "package" :v-adjust 0 :face face-spec)) :extensions (tag-open))
+		     (all-the-icons-faicon "cube"
+                                             :v-adjust 0.1
+                                             :face 'font-lock-keyword-face))
+       :extensions (tag-open))
       (treemacs-create-icon
        :icon (format "%s\t%s\t"
 		     (all-the-icons-octicon "chevron-right" :height 0.75 :v-adjust 0.1 :face face-spec)
-		     (all-the-icons-octicon "package" :v-adjust 0 :face face-spec))
+		     (all-the-icons-faicon "cube"
+                                             :v-adjust 0.1
+                                             :face 'font-lock-keyword-face))
        :extensions (tag-closed))
       (treemacs-create-icon
-       :icon (format "%s\t" (all-the-icons-octicon "tag" :height 0.9 :v-adjust 0 :face face-spec))
+       :icon (format "%s " (all-the-icons-faicon "tag"
+                                             :height 0.9
+                                             :face 'font-lock-type-face))
        :extensions (tag-leaf))
       (treemacs-create-icon
        :icon (format "%s\t" (all-the-icons-octicon "flame" :v-adjust 0 :face face-spec))
