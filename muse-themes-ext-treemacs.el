@@ -204,7 +204,7 @@
        :icon (format "  %s\t" (all-the-icons-icon-for-file "foo.js"))
        :extensions ("js"))
       (treemacs-create-icon
-       :icon (format "  %s\t" (all-the-icons-icon-for-file "foo.jsx")
+       :icon (format "  %s\t" (all-the-icons-icon-for-file "foo.jsx"))
        :extensions ("jsx"))
       (treemacs-create-icon
        :icon (format "  %s\t" (all-the-icons-icon-for-file "foo.ml"))
@@ -287,7 +287,7 @@
       (treemacs-create-icon
        :icon (format "  %s\t" (all-the-icons-icon-for-file "foo.rkt"))
        :extensions ("racket" "rkt" "rktl" "rktd" "scrbl" "scribble" "plt"))
-      (treemacs-create-ico
+      (treemacs-create-icon
        :icon (format "  %s\t" (all-the-icons-icon-for-file "foo.reason"))
        :extensions ("re" "rei"))
       (treemacs-create-icon
