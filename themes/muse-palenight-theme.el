@@ -20,8 +20,8 @@ Can be an integer to determine the exact padding."
 
   ;; name        default   256       16
   ((bg         '("#292D3E" nil       nil))
-   (bg-alt     '("#232635" nil       nil))
-   (base0      '("#1c1f2b" "black"   "black"))
+   (bg-alt     '("#1C1E29" nil       nil))
+   (base0      '("#1C1F2B" "black"   "black"))
    (base1      '("#1e212e" "#262626" "brightblack"))
    (base2      '("#242837" "#303030" "brightblack"))
    (base3      '("#3C435E" "#3a3a3a" "brightblack"))
@@ -29,7 +29,7 @@ Can be an integer to determine the exact padding."
    (base5      '("#676E95" "#585858" "brightblack"))
    (base6      '("#697098" "#626262" "brightblack"))
    (base7      '("#717CB4" "#767676" "brightblack"))
-   (base8      '("#A6Accd" "#a8a8a8" "white"))
+   (base8      '("#A6ACCD" "#a8a8a8" "white"))
    (fg         '("#EEFFFF" "#e4e4e4" "brightwhite"))
    (fg-alt     '("#BFC7D5" "#bcbcbc" "white"))
 
@@ -72,7 +72,7 @@ Can be an integer to determine the exact padding."
    (vc-deleted     red)
 
    ;; custom categories
-   (modeline-bg     `(,(muse-darken (car bg-alt) 0.3) ,@(cdr base3)))
+   (modeline-bg     base1)
    (modeline-bg-alt (muse-darken bg 0.01))
    (modeline-fg     base8)
    (modeline-fg-alt comments)
@@ -103,7 +103,6 @@ Can be an integer to determine the exact padding."
 
    (fringe :background base2)
 
-   ((line-number &override) :foreground base4 :background base2)
    ((line-number-current-line &override) :foreground fg)
 
    (font-lock-keyword-face
