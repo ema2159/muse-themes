@@ -72,7 +72,7 @@ Can be an integer to determine the exact padding."
    (vc-deleted     red)
 
    ;; custom categories
-   (modeline-bg     base1)
+   (modeline-bg     base2)
    (modeline-bg-alt (muse-darken bg 0.01))
    (modeline-fg     base8)
    (modeline-fg-alt comments)
