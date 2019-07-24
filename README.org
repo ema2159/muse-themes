@@ -3,17 +3,19 @@
 
 * What is this
   This is an UI/multi-theme package for Emacs using doom-themes core. It's currently work in progress, but soon it will be available on MELPA.
-* TO DO [2/4]
+* TO DO [3/4]
   - [X] Fix linting/documentation problems.
-  - [ ] Implement two themes 
+  - [X] Implement two themes 
   - [ ] Add this package to MELPA (depends on the previous points)
   - [X] Create an own Treemacs theme
 * Theme wish list 
   - [ ] Fairy Floss theme
   - [ ] Wilsmesdorf theme 
   - [ ] Tron Legacy theme
-  - [ ] Gruvbox theme  
+  - [X] Gruvbox theme  
+  - [X] Solarized Dark theme
   - [ ] Palenight theme
+  - [ ] Moonlight theme
   - [ ] Outrun Night theme (port from VS Code) 
   - [ ] Outrun Electric theme (port from VS Code)  
   - [ ] Dark+ theme (port from VS Code)  
